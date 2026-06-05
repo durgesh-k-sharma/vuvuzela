@@ -1,0 +1,19 @@
+[package]
+name = "vuvuzela"
+version = "0.1.0"
+edition = "2021"
+authors = ["durgesh-k-sharma"]
+description = "Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis"
+
+[dependencies]
+ring = "0.17"
+sha2 = "0.10"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+bincode = "1"
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+thiserror = "1"
+hex = "0.4"
+
+[dev-dependencies]
