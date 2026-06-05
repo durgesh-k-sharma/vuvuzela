@@ -31,14 +31,14 @@ Alice -> [Server 1] -> [Server 2] -> [Server 3] -> dead drops
 # Build
 cargo build --release
 
+# Run the demo (3 servers, 2 clients, 5 rounds)
+cargo run --bin vuvuzela -- --rounds 5
+
+# Run with custom messages
+cargo run --bin vuvuzela -- --rounds 3 --alice-msg "Hello" --bob-msg "World"
+
 # Run tests
 cargo test
-
-# Run the server binary
-cargo run --bin server -- --index 0 --num-servers 3
-
-# Run the client binary
-cargo run --bin client -- --server 127.0.0.1:5000
 ```
 
 ## Project Structure
